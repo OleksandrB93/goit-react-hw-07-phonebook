@@ -4,18 +4,18 @@ export const AppContainer = styled.div`
   margin-top: 80px;
   padding: 30px;
   border-radius: 7px;
-  background-color: #fbfbfb7e;
-  box-shadow: rgb(180, 145, 184) 0px 22px 70px 4px,
-  #5f758f 0px 0px 6px 0px inset;
+  border: 2px solid #831092;
+  background-color: #900c85a8;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 export const H1 = styled.h1`
   text-align: center;
-  color: #000000b8;
+  color: #ffffffb8;
 `;
 
 export const H2 = styled.h2`
   text-align: center;
-  color: #000000b8;
+  color: #ffffffb8;
   margin-top: 20px;
 `;

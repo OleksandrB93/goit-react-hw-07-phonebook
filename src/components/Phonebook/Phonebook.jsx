@@ -1,14 +1,13 @@
 import { nanoid } from "nanoid";
 import React, { useState } from "react";
 
-import { addContact } from "redux/operations"; 
+import { addContact } from "redux/operations";
 import { selectContacts } from "redux/selectors";
 
 import PropTypes from "prop-types";
 import { HiUserAdd } from "react-icons/hi";
-import { NameLabel, AddContactBtn, Input } from "./Phonebook.styled";
+import { NameLabel, AddContactBtn, Input, Form } from "./Phonebook.styled";
 import { useDispatch, useSelector } from "react-redux";
-
 
 export default function Phonebook() {
   const [name, setName] = useState("");
@@ -52,7 +51,6 @@ export default function Phonebook() {
     const checkContact = contacts.some(
       (contact) => contact.name.toLowerCase() === name.toLowerCase()
     );
-
     checkContact
       ? alert(`${name} is already in contact`)
       : dispatch(addContact(contact));
@@ -67,7 +65,7 @@ export default function Phonebook() {
   };
   return (
     <div>
-      <form action="" onSubmit={handleSubmit}>
+      <Form action="" onSubmit={handleSubmit}>
         <NameLabel htmlFor={nameInputId}>
           Name:
           <Input
@@ -82,7 +80,7 @@ export default function Phonebook() {
             placeholder="Please write name"
           />
         </NameLabel>
-        <label htmlFor={phoneNumberInputId}>
+        <NameLabel htmlFor={phoneNumberInputId}>
           Phone number:
           <Input
             type="tel"
@@ -95,11 +93,11 @@ export default function Phonebook() {
             id={phoneNumberInputId}
             placeholder="Please write number"
           />
-        </label>
+        </NameLabel>
         <AddContactBtn tupe="submit">
-          <HiUserAdd fill="#7f24a8" />
+          <HiUserAdd size={25} />
         </AddContactBtn>
-      </form>
+      </Form>
     </div>
   );
 }

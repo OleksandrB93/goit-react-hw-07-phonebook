@@ -9,12 +9,13 @@ export const SearchInputSt = styled.input`
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;
+  transition: border-bottom 300ms ease-in;
   &:hover,
   &:focus {
     background-color: transparent;
     outline: none;
     border: none;
-    border-bottom: 2px solid #ac4a75ae;
+    border-bottom: 2px solid #e9e9e9;
   }
 
   ::placeholder {

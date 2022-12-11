@@ -23,11 +23,11 @@ export default function ContactList() {
           id,
           name,
           phoneNumber,
-          img = "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+          avatar,
         }) => {
           return (
             <Item key={id}>
-              <Avatar src={img} alt="avatar" />
+              <Avatar src={avatar} alt="avatar" />
               <UserInfo>
                 {name}: {phoneNumber}
               </UserInfo>
@@ -35,7 +35,7 @@ export default function ContactList() {
                 type="button"
                 onClick={() => dispatch(deleteContact(id))}
               >
-                <HiOutlineTrash />
+                <HiOutlineTrash size={20}/>
               </DeleteBtn>
             </Item>
           );
