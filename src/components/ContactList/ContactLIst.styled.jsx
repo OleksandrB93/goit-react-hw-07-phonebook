@@ -6,7 +6,6 @@ export const List = styled.ul`
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-overflow-y: auto;
 `;
 
 export const Item = styled.li`
@@ -19,7 +18,7 @@ export const Item = styled.li`
   background-color: #e9e9e9;
 
   box-shadow: rgb(0, 0, 0) 0px 1px 5px;
-  transition: all 300ms;
+  transition: all 300ms ease-out;
 
   &:hover {
     background: linear-gradient(27deg, #cc1092 0%, #3a1092 100%);
@@ -34,8 +33,9 @@ export const Item = styled.li`
 export const Avatar = styled.img`
   margin-left: 10px;
   width: 40px;
+  height: 40;
   border-radius: 50px;
-  transition: all 250ms;
+  transition: all 250ms ease-out;
 `;
 
 export const UserInfo = styled.p`
@@ -46,14 +46,12 @@ export const DeleteBtn = styled.button`
   padding-top: 2px;
   max-height: 25px;
   margin-left: auto;
-  margin-right: 5px;
   margin-right: 15px;
-  border: 1px solid #a7a7a7ec;
   border-radius: 5px;
   cursor: pointer;
   background: transparent;
   border: none;
-  transition: all 250ms;
+  transition: all 200ms ease-out;
 
   &:hover {
     color: #ffffff;

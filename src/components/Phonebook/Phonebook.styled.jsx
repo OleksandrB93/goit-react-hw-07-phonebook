@@ -51,6 +51,6 @@ export const AddContactBtn = styled.button`
 `;
 
 export const IconAdd = styled.svg`
-  width: 80px;
-  height: 80px;
+  /* width: 80px;
+  height: 80px; */
 `;

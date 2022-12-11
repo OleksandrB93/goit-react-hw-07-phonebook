@@ -13,9 +13,9 @@ export default function Phonebook() {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
-  const [img, setImg] = useState(
-    "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"
-  );
+  // const [img, setImg] = useState(
+  //   "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"
+  // );
 
   const nameInputId = nanoid();
   const phoneNumberInputId = nanoid();
@@ -61,7 +61,7 @@ export default function Phonebook() {
   const resetSubmit = () => {
     setName("");
     setPhoneNumber("");
-    setImg("");
+    // setImg("");
   };
   return (
     <div>

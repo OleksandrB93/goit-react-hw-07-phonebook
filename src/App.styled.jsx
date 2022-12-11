@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 
 export const AppContainer = styled.div`
+  margin-left: 15px;
+  margin-right: 15px;
   margin-top: 80px;
   padding: 30px;
   border-radius: 7px;

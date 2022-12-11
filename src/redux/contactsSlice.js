@@ -18,14 +18,21 @@ const contactsSlice = createSlice({
     error: null,
   },
 
-  extraReducers:  {
-    [fetchContacts.pending]: handlePending,
+  extraReducers: {
+    [fetchContacts.pending](state) {
+      state.isLoading = true;
+    },
     [fetchContacts.fulfilled](state, action) {
       state.isLoading = false;
       state.error = null;
       state.items = action.payload;
     },
-    [fetchContacts.rejected]: handleRejected,
+
+    [fetchContacts.rejected](state, action) {
+      state.isLoading = false;
+      state.error = action.payload;
+    },
+
     [addContact.pending]: handlePending,
     [addContact.fulfilled](state, action) {
       state.isLoading = false;
@@ -33,6 +40,7 @@ const contactsSlice = createSlice({
       state.items.unshift(action.payload);
     },
     [addContact.rejected]: handleRejected,
+
     [deleteContact.pending]: handlePending,
     [deleteContact.fulfilled](state, action) {
       state.isLoading = false;
