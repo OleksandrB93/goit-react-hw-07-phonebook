@@ -3,27 +3,22 @@ import React from "react";
 import { DeleteBtn, List, Item, UserInfo, Avatar } from "./ContactLIst.styled";
 import { HiOutlineTrash } from "react-icons/hi";
 
+
+
+
 import { useDispatch, useSelector } from "react-redux";
-import { deleteContact } from "redux/contactSlise";
-import { getContacts, getFilter } from "redux/contactSlise";
+import { deleteContact } from "redux/operations";
+import { selectFilteredContacts } from "redux/selectors"; 
 
 export default function ContactList() {
-  const dispatch = useDispatch();
-  const contacts = useSelector(getContacts);
-  const filtered = useSelector(getFilter);
 
-  const findContacts = () => {
-    const normalizedFilter = filtered.toLowerCase();
-    return contacts.filter((contact) =>
-      contact.name.toLowerCase().includes(normalizedFilter)
-    );
-  };
+    const contacts = useSelector(selectFilteredContacts);
 
-  const filteredContacts = findContacts();
+    const dispatch = useDispatch();
 
   return (
     <List>
-      {filteredContacts.map(
+      {contacts.map(
         ({
           id,
           name,

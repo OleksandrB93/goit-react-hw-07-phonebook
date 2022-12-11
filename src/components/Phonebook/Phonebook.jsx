@@ -1,15 +1,19 @@
 import { nanoid } from "nanoid";
 import React, { useState } from "react";
+
+import { addContact } from "redux/operations"; 
+import { selectContacts } from "redux/selectors";
+
 import PropTypes from "prop-types";
 import { HiUserAdd } from "react-icons/hi";
 import { NameLabel, AddContactBtn, Input } from "./Phonebook.styled";
 import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "redux/contactSlise";
-import { getContacts } from "redux/contactSlise";
+
 
 export default function Phonebook() {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+
   const [img, setImg] = useState(
     "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"
   );
@@ -17,7 +21,7 @@ export default function Phonebook() {
   const nameInputId = nanoid();
   const phoneNumberInputId = nanoid();
 
-  const contacts = useSelector(getContacts);
+  const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
 
   const handleChange = (event) => {
