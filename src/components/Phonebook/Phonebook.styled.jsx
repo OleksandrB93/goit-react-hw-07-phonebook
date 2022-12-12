@@ -34,13 +34,12 @@ export const Input = styled.input`
 `;
 export const AddContactBtn = styled.button`
   /* padding: 5px; */
-  max-height: 25px;
+  /* max-height: 25px; */
   margin-left: 10px;
-  border: 1px solid #a7a7a7ec;
   border-radius: 5px;
-  transition: all 250ms;
+  transition: all 250ms ease-out;
   background: transparent;
-  border: none;
+  border: 1px solid #360032;
   cursor: pointer;
   color: #e9e9e9;
 

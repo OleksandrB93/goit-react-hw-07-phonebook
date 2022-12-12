@@ -95,7 +95,7 @@ export default function Phonebook() {
           />
         </NameLabel>
         <AddContactBtn tupe="submit">
-          <HiUserAdd size={25} />
+          <HiUserAdd size={16} />
         </AddContactBtn>
       </Form>
     </div>

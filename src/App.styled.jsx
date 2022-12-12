@@ -7,7 +7,7 @@ export const AppContainer = styled.div`
   height: calc(100vh - 100px);
   max-height: 520px;
   transform: translate(-50%, -50%);
-  max-width: 400px;
+  min-width: 400px;
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 15px;
