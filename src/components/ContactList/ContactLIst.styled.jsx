@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 
 export const List = styled.ul`
+    /* https://www.8host.com/blog/stilizaciya-polosy-prokrutki-v-css/ */
   ::-webkit-scrollbar {
     width: 15px; /* ширина всей полосы прокрутки */
   }
@@ -13,8 +14,9 @@ export const List = styled.ul`
   ::-webkit-scrollbar-thumb {
     background-color: #831092; /* цвет бегунка */
     border-radius: 20px; /* округлось бегунка */
-    border: 3px solid #550a5f; //отступ вокруг бегунка
+    border: 2px solid #e6e6e6ba; //отступ вокруг бегунка
   }
+
   overflow-y: scroll;
   height: 400px;
   display: flex;
