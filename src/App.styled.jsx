@@ -1,10 +1,19 @@
 import styled from "@emotion/styled";
 
 export const AppContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: calc(100vh - 100px);
+  max-height: 520px;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: 80px;
-  padding: 30px;
+  padding: 15px;
+  padding-bottom: 30px;
   border-radius: 7px;
   border: 2px solid #831092;
   background-color: #900c85a8;
@@ -19,5 +28,5 @@ export const H1 = styled.h1`
 export const H2 = styled.h2`
   text-align: center;
   color: #ffffffb8;
-  margin-top: 20px;
+  margin-top: 10px;
 `;

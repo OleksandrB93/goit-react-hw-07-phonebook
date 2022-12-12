@@ -10,10 +10,11 @@ export const NameLabel = styled.label`
 `;
 
 export const Input = styled.input`
+  width: 100px;
   margin-left: 3px;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #360032;
   transition: border-bottom 300ms ease-in;
 
   ::placeholder {

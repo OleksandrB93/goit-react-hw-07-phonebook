@@ -81,7 +81,7 @@ export default function Phonebook() {
           />
         </NameLabel>
         <NameLabel htmlFor={phoneNumberInputId}>
-          Phone number:
+          Number:
           <Input
             type="tel"
             name="phoneNumber"

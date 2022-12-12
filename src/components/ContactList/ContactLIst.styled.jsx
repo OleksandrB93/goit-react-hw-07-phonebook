@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const List = styled.ul`
-    /* https://www.8host.com/blog/stilizaciya-polosy-prokrutki-v-css/ */
+  /* https://www.8host.com/blog/stilizaciya-polosy-prokrutki-v-css/ */
   ::-webkit-scrollbar {
     width: 15px; /* ширина всей полосы прокрутки */
   }
@@ -18,11 +18,13 @@ export const List = styled.ul`
   }
 
   overflow-y: scroll;
-  height: 400px;
+  max-height: 355px;
+  padding-right: 3px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
 
   border-radius: 15px;
 `;
