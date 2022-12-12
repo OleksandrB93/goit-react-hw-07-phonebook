@@ -1,6 +1,20 @@
 import styled from "@emotion/styled";
 
 export const List = styled.ul`
+  ::-webkit-scrollbar {
+    width: 15px; /* ширина всей полосы прокрутки */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #de89c0; /* цвет зоны отслеживания */
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #831092; /* цвет бегунка */
+    border-radius: 20px; /* округлось бегунка */
+    border: 3px solid #550a5f; //отступ вокруг бегунка
+  }
   overflow-y: scroll;
   height: 400px;
   display: flex;
