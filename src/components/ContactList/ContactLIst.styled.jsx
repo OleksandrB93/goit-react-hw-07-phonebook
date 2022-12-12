@@ -1,19 +1,22 @@
 import styled from "@emotion/styled";
 
 export const List = styled.ul`
-  display: flex;
+  overflow-y: scroll;
   height: 400px;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+
+  border-radius: 15px;
 `;
 
 export const Item = styled.li`
+width: 95%;
   display: flex;
   align-items: center;
   padding: 10px 0;
   margin: 5px 0;
-  width: 100%;
   border-radius: 5px;
   background-color: #e9e9e9;
 
