@@ -4,7 +4,6 @@ export const AppContainer = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  height: calc(100vh - 100px);
   max-height: 520px;
   transform: translate(-50%, -50%);
   min-width: 400px;
@@ -17,7 +16,7 @@ export const AppContainer = styled.div`
   border-radius: 7px;
   border: 2px solid #831092;
   background-color: #900c85a8;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(251, 202, 255, 0.35) 0px 5px 15px;
 `;
 
 export const H1 = styled.h1`
